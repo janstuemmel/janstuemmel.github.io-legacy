@@ -1,1 +1,21 @@
-...coming soon.
+---
+layout: default
+---
+<div class="home">
+
+	<p>Hello, I'am Jan. A 26 year old programmer. Student of technical university Berlin. Interested in Python, PHP, and Javascript.</p>
+
+	<h2 class="heading">Contact</h2>
+	<p>You can contact me via Eamil. Follow my Git...
+	<h2 class="heading">Latest Blog Posts</h2>
+
+	<ul class="post-list">
+	{% for post in site.posts limit:5 %}
+		<li>
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        	<h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        	<div class="post-content">{{ post.excerpt }}</div>
+		</li>
+	{% endfor %}
+	</ul>
+</div>

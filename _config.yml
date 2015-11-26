@@ -13,3 +13,11 @@ github_username:  janstuemmel
 # Build settings
 #markdown: kramdown
 markdown: redcarpet
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
