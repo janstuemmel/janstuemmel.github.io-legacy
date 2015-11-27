@@ -3,11 +3,24 @@ layout: default
 ---
 <div class="home">
 
-	<p>Hello, I'am Jan. A 26 year old programmer. Student of technical university Berlin. Interested in Python, PHP, and Javascript.</p>
+	<div class="info">
+		<div class="section group">
+			<div class="col span_2_of_6">
+				<h1>About me</h1>
+				<p>{{site.description}}</p>
+			</div>
+			<div class="col span_2_of_6">
+				<img class="img-rounded" src="http://www.gravatar.com/avatar/0d3c9ecc15c651b2eeb939a47dd4db1c?s=200">
+			</div>
+			<div class="col span_2_of_6">
+				<h1>Contact</h1>
+				<p>{{site.email}}<br>
+				<a href="http://github.com/janstuemmel">github.com/janstuemmel</a><br>
+				<a href="http://twitter.com/janstuemmel">twitter.com/janstuemmel</a>
+			</div>
+		</div>
+	</div>
 
-	<h2 class="heading">Contact</h2>
-	<p>You can contact me via Eamil. Follow my Git...
-	<h2 class="heading">Latest Blog Posts</h2>
 
 	<ul class="post-list">
 	{% for post in site.posts limit:5 %}
