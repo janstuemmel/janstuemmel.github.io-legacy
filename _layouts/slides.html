@@ -31,12 +31,14 @@
 </head>
 <body>
   <div class="reveal">
-    {{content}}
+    <div class="slides">
+      {{content}}
+    </div>
   </div>
   <script src="/assets/reveal.js/lib/js/head.min.js"></script>
   <script src="/assets/reveal.js/js/reveal.js"></script>
   <script>
-    var reveal_config = {{ page.reveal_config | jsonify }};
+    var reveal_config = {{ page.reveal_config | jsonify }} || {};
     reveal_config.dependencies = [
       { src: '/assets/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
       { src: '/assets/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
