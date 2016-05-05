@@ -2,28 +2,24 @@
 title: janstuemmel.de
 email: info@janstuemmel.de
 description: >
-    26 year old programmer. Student of the Technical
-    University Berlin, Computer Science. Interested in Python, PHP,
-    and Javascript.
+  26 year old programmer. Student at the Technical
+  University of Berlin, Computer Science. Interested in Python,
+  Javascript and Nodejs.
 baseurl: ""
 url: "http://janstuemmel.de"
-twitter_username: janstuemmel
-github_username:  janstuemmel
-
-# Build settings
-#markdown: kramdown
-markdown: redcarpet
+twitter_url: http://twitter.com/janstuemmel
+github_url:  http://github.com/janstuemmel
 
 defaults:
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            layout: "post"
-    -
-        scope:
-            path: "about.md"
-            type: ""
-        values:
-            layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "about.md"
+      type: ""
+    values:
+      layout: "default"
