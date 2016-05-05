@@ -1,6 +1,6 @@
 React Native is developed on macs for macs. Let's see how to properly setup a react native environment on an ubuntu 14.04 machine.
 
-### Install Android SDK
+## Install Android SDK
 
 Since Google partners with the [JetBrains][jetbrains] team and uses IntelliJ for their [Android Studio][android_studio] its very simple to setup a android environment on your machine. So lets install Android Studio:
 
@@ -36,7 +36,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 PATH=$PATH:/usr/local/opt/android-sdk/platform-tools
 ```
 
-### Install React Native
+## Install React Native
 
 React native requires node>=4.0 and watchman. Let's install those dependencies,
 according to their documentation: [Node Install Docs][node_install] and [Watchman Install Docs][watchman_install]
@@ -61,7 +61,7 @@ Finally, we can install **react-native**:
 sudo npm install -g react-native
 ```
 
-### Use React Native
+## Use React Native
 
 ```
 react-native init TestApp
@@ -73,24 +73,24 @@ This creates a folder `TestApp` and install all necessary dependencies.
 `start` starts the development server and `run-android` initializes a
 android virtual device.
 
-### Issues
+## Issues
 
 Start Android Studio and remember two utilities:
 
 1. `Tools > Android > AVD Manager`
 2. `Tools > Android > SDK Manager`
 
-#### Wrong SDK Version
+### Wrong SDK Version
 
 Go to the `SDK Manager`, click **Launch Standalone SDK Manager** and look which version
 the **Android SDK Build Tools** have. Then go into your TestApp directory, replace
 **buildToolsVersion** in `./android/app/build.gradle` with your local version.
 
-#### Watchman Error
+### Watchman Error
 
 If there occurs any error with watchman, try to fix it with that [Github fix][watchman_error]
 
-#### Missing SDK packages
+### Missing SDK packages
 
 Look at [React Android Setup][react_native_android], if there are any missing packages.
 
