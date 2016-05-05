@@ -10,6 +10,13 @@ url: "http://janstuemmel.de"
 twitter_url: http://twitter.com/janstuemmel
 github_url:  http://github.com/janstuemmel
 
+# permalink: /:year/:month/:day/:title
+
+collections:
+  slides:
+    output: true
+    permalink: /:collection/:path
+
 defaults:
   -
     scope:
@@ -23,3 +30,9 @@ defaults:
       type: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "slides"
+    values:
+      layout: "slides"

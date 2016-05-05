@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<ul class="post-list">
+{% for slide in site.slides limit:5 %}
+ <li>
+    <div class="title">
+      <h1><a class="post-link" href="{{ slide.url | prepend: site.baseurl | remove: 'index' }}">{{ slide.title }}</a></h2>
+      <span class="post-meta">{{ slide.date | date: "%b %-d, %Y" }}</span>
+    </div>
+    <p class="content">{{ slide.description }}</p>
+  </li>
+{% endfor %}
+</ul>
