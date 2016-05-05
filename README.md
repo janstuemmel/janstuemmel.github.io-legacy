@@ -8,5 +8,5 @@ Installation workaround [http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-1
 
 ```bash
 sudo apt-get install ruby ruby-dev ruby2.0 ruby2.0-dev make gcc nodejs
-sudo gem2.0 install jekyll redcarpet
+sudo gem2.0 install jekyll
 ```
