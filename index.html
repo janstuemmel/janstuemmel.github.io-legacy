@@ -22,12 +22,14 @@ layout: home
     <ul class="post-list">
     {% for post in site.posts limit:5 %}
   	 <li>
+       {% if post.ext == '.md' %}
         <div class="title">
           <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
         <div class="content">{{ post.excerpt }}</div>
       </li>
+      {% endif %}
     {% endfor %}
     </ul>
   </div>

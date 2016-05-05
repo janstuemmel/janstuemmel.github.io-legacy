@@ -5,6 +5,7 @@ title: Archive
 <div class="archive">
   <ul class="post-list">
     {% for post in site.posts %}
+    {% if post.ext == '.md' %}
       {% unless post.next %}
         <h2>{{ post.date | date: '%Y' }}</h2>
       {% else %}
@@ -19,6 +20,7 @@ title: Archive
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
       </li>
+    {% endif %}
     {% endfor %}
   </ul>
 
