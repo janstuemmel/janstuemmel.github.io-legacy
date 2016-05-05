@@ -1,8 +1,27 @@
 ---
 title: Test Slides
 description: Test Slides at the Lorem Ipsum Event October 2001
+theme: night
+reveal_config:
+  controls: false
+  progress: false
+  transition: slide
 ---
 <div class="slides">
-  <section>Slide 1</section>
-  <section>Slide 2</section>
+  <section data-markdown>
+    # Slide 1
+    ```
+    function hello(name) {
+      console.log('hello' + name);
+    }
+    ```
+  </section>
+  <section data-markdown>
+    # Slide 2
+    Hello 2
+    ```
+    def func():
+      return 'code again'
+    ```
+  </section>
 </div>
