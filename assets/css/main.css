@@ -12,6 +12,17 @@ body {
   padding: 10px 20px;
 }
 
+.site-header a {
+  font-size: 14px;
+  color: #9f9f9f;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.site-header a:hover {
+  color: #333;
+}
+
 /*BLOGPOST*/
 article.post {
   color: #333;
@@ -24,18 +35,6 @@ article.post h3,
 article.post h4,
 article.post h5,
 article.post h6 {
-}
-
-
-.site-header a {
-  font-size: 14px;
-  color: #9f9f9f;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
-.site-header a:hover {
-  color: #333;
 }
 
 article.post header {
