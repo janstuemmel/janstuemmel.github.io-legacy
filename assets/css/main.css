@@ -84,6 +84,26 @@ article.post .post-content a:hover {
 }
 
 
+article.post .post-content table {
+    border-collapse: collapse;
+}
+
+article.post .post-content table,
+article.post .post-content th,
+article.post .post-content td {
+    border: 1px solid #d0d0d0;
+}
+
+article.post .post-content th {
+    background: #f5f5f5
+
+}
+
+article.post .post-content th,
+article.post .post-content td {
+  padding: 10px;
+}
+
 /*POSTLIST*/
 ul.post-list {
   list-style: none;
